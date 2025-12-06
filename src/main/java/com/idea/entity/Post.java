@@ -9,9 +9,10 @@ import lombok.Setter;
 @Entity
 @Table(name = "post")
 public class Post {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @Column(name = "id", nullable = true)
     private Long id;
 
     @Column(name = "title", nullable = false, length = 100)
